@@ -15,5 +15,16 @@ namespace MainApp.Controllers
         {
             _context = context;
         }
+
+        [Route("app/react")]
+        public IActionResult ReactApp()
+        {
+            return View();
+        }
+
+        public IActionResult Index()
+        {
+            return View();
+        }
     }
 }
